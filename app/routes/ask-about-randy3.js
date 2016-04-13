@@ -13,10 +13,6 @@ export default Ember.Route.extend({
     mimicBroVoice() {
       this.set('mimicBroVoice', true);
       this.transitionTo('mimic-bro-voice');
-    },
-    askAboutRandy3() {
-      this.set('askAboutRandy3', true);
-      this.transitionTo('ask-about-randy3');
     }
   }
 });
