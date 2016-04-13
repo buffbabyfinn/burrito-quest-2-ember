@@ -26,7 +26,7 @@ D) Go talk to Steve, the ambulance driver {{talk-steve}}
 
 IF ASK PROTAGONIST ABOUT RANDY {{ask-randy-1}}
 
-"Oh, you mean Randy Shmeckles? I heard he was coming tonight, but I haven't seen him yet."
+"Oh, you mean Randy Schmeckles? I heard he was coming tonight, but I haven't seen him yet."
 
 {{talk-steve}}
 

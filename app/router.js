@@ -15,6 +15,23 @@ Router.map(function() {
   this.route('take-drugs-death');
   this.route('ask-about-randy2');
   this.route('ask-for-wallet');
+  this.route('do-kegstand-til-death');
+  this.route('do-28-seconds');
+  this.route('do-29-seconds');
+  this.route('approach-randy-backyard');
+  this.route('peek-from-microwave');
+  this.route('take-magic-eye');
+  this.route('take-sunglasses');
+  this.route('ask-about-randy1');
+  this.route('show-friend-magic-eye');
+  this.route('mimic-bro-voice');
+  this.route('ask-about-randy3');
+  this.route('steal-bike-death');
+  this.route('follow-randy-on-foot');
+  this.route('bribe-kid');
+  this.route('steal-cops-gun-death');
+  this.route('enter-hospital');
+  this.route('enter-hospital-death');
 });
 
 export default Router;
