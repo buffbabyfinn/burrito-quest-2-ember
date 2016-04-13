@@ -43,6 +43,11 @@ Router.map(function() {
   this.route('wheelchair-run-for-it');
   this.route('gurney-distract-magic-eye');
   this.route('gurney-run-for-it');
+  this.route('wheelchair-trophy');
+  this.route('gurney-trophy');
+  this.route('gurney-distract-trophy');
+  this.route('wheelchair-distract-trophy');
+  this.route('wheelchair-run-for-it-trophy');
 });
 
 export default Router;

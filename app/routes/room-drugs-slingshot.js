@@ -16,4 +16,5 @@ export default Ember.Route.extend({
       this.set('gurney', true);
       this.transitionTo('gurney');
     }
+  }
 });

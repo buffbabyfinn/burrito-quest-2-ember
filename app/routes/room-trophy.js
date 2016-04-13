@@ -15,6 +15,14 @@ export default Ember.Route.extend({
     gurney() {
       this.set('gurney', true);
       this.transitionTo('gurney');
+    },
+    wheelchairTrophy() {
+      this.set('wheelchairTrophy', true);
+      this.transitionTo('wheelchair-trophy');
+    },
+    gurneyTrophy() {
+      this.set('gurneyTrophy', true);
+      this.transitionTo('gurney-trophy');
     }
   }
 });
