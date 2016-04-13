@@ -10,6 +10,9 @@ export default Ember.Route.extend({
       this.set('talkToSteve', true);
       this.transitionTo('talk-to-steve');
     },
-
+    doKegstand() {
+      this.set('doKegstand', true);
+      this.transitionTo('kegstand');
+    }
   }
 });

@@ -15,6 +15,9 @@ Router.map(function() {
   this.route('take-drugs-death');
   this.route('ask-about-randy2');
   this.route('ask-for-wallet');
+  this.route('do-kegstand-til-death');
+  this.route('do-28-seconds');
+  this.route('do-29-seconds');
 });
 
 export default Router;
