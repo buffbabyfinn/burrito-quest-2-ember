@@ -1,0 +1,8 @@
+<h2>Inventory</h2>
+{{#each inventory.items as |item|}}
+{{#if item.have}}
+<img class="inventory-image" src="{{item.image}}"/>
+<h4 class="inventory-name">{{item.name}}</h4>
+<br>
+{{/if}}
+{{/each}}

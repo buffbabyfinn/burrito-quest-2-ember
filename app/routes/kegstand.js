@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+<<<<<<< HEAD
   model() {
     return this.store.findAll('game');
   },
@@ -19,4 +20,7 @@ export default Ember.Route.extend({
       this.transitionTo('do-kegstand-til-death');
     }
   }
+=======
+  inventory: Ember.inject.service(),
+>>>>>>> 70534088ff05579e31f9ab4a0775f8219baf473f
 });
