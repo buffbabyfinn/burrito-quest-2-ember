@@ -18,6 +18,11 @@ Router.map(function() {
   this.route('do-kegstand-til-death');
   this.route('do-28-seconds');
   this.route('do-29-seconds');
+  this.route('approach-randy-backyard');
+  this.route('peek-from-microwave');
+  this.route('take-magic-eye');
+  this.route('take-sunglasses');
+  this.route('ask-about-randy1');
 });
 
 export default Router;

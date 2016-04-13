@@ -17,6 +17,10 @@ export default Ember.Route.extend({
     approachRandyBackyard() {
       this.set('approachRandyBackyard', true);
       this.transitionTo('approach-randy-backyard');
+    },
+    peekFromMicrowave() {
+      this.set('peekFromMicrowave', true);
+      this.transitionTo('peek-from-microwave');
     }
   }
 });
