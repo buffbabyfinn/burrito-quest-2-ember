@@ -7,11 +7,15 @@ export default Ember.Route.extend({
     return this.store.findAll('game');
   },
 
+  test: false,
+  testProperty: true,
+
   actions: {
     takeMagicEye() {
       var book = {name: "Magic Eye Book", image: ""};
       this.get('inventory').add(book);
-      this.set('book', true);
+      this.set('test', true);
+      debugger;
     },
     takeSunglasses() {
       var sunglasses = {name: "Sunglasses", image: ""};
