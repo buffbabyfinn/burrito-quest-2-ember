@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model() {
     return this.store.findAll('game');
   },
-
+  inventory: Ember.inject.service(),
   actions: {
     putOnSunglasses() {
 
@@ -22,4 +22,7 @@ export default Ember.Route.extend({
       this.transitionTo('enter-hospital-death');
     }
   }
+
+
+
 });

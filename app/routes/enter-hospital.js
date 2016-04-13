@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+<<<<<<< HEAD
   model() {
     return this.store.findAll('game');
   },
@@ -27,4 +28,7 @@ export default Ember.Route.extend({
       this.transitionTo('room-slingshot-death');
     }
   }
+=======
+  inventory: Ember.inject.service()
+>>>>>>> 574b83be7ba16d54d054c4a3c05a7f9c586420af
 });
