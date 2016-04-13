@@ -15,6 +15,10 @@ export default Ember.Route.extend({
     askAboutRandy2() {
       this.set('askAboutRandy2', true);
       this.transitionTo('ask-about-randy2');
+    },
+    askForDrugs() {
+      this.set('askForDrugs', true);
+      this.transitionTo('ask-for-drugs');
     }
   }
 });

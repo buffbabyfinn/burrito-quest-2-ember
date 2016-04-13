@@ -20,6 +20,10 @@ export default Ember.Route.extend({
     enterHospital() {
       this.set('enterHospital', true);
       this.transitionTo('enter-hospital');
+    },
+    enterHospitalDeath() {
+      this.set('enterHospitalDeath', true);
+      this.transitionTo('enter-hospital-death');
     }
   }
 });

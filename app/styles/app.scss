@@ -1,3 +1,18 @@
 .inventory-image {
   max-width: 150px;
 }
+
+body {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  p {
+    font-family: 'Ubuntu Mono', ;
+    font-size: 1.4em;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
