@@ -32,6 +32,17 @@ Router.map(function() {
   this.route('steal-cops-gun-death');
   this.route('enter-hospital');
   this.route('enter-hospital-death');
+  this.route('room-no-items-death');
+  this.route('room-drugs-slingshot');
+  this.route('room-trophy');
+  this.route('room-drugs-death');
+  this.route('room-slingshot-death');
+  this.route('wheelchair');
+  this.route('gurney');
+  this.route('wheelchair-distract-magic-eye');
+  this.route('wheelchair-run-for-it');
+  this.route('gurney-distract-magic-eye');
+  this.route('gurney-run-for-it');
 });
 
 export default Router;
