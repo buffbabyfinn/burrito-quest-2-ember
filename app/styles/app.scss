@@ -16,3 +16,20 @@ body {
     display: none;
   }
 }
+
+.game-btn {
+  font-family: 'Ubuntu Mono', ;
+  font-weight: bold;
+  font-size: 1.6em;
+  border-radius: 5px;
+  margin: 5px 0px;
+  color: #333;
+  background-color: white;
+  border: 2px #333 solid;
+
+}
+
+.game-btn:hover {
+  color: white;
+  background-color: #333;
+}
