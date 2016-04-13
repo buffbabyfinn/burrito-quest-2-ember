@@ -12,14 +12,14 @@ export default Ember.Route.extend({
       var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
       this.get('inventory').add(dirtyDrugs);
       this.set('askForDrugs', true);
-
+      this.set('dirtyDrugs', true);
       this.transitionTo('ask-for-drugs');
     },
     askForWallet() {
       var stevesWallet = {name: "Steve the Ambulance Driver's Wallet", image: ""};
       this.get('inventory').add(stevesWallet);
+      this.set('stevesWallet', true);
       this.set('askForWallet', true);
-
       this.transitionTo('ask-for-wallet');
     },
     askAboutRandy2() {

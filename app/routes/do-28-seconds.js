@@ -11,10 +11,12 @@ export default Ember.Route.extend({
     takeMagicEye() {
       var book = {name: "Magic Eye Book", image: ""};
       this.get('inventory').add(book);
+      this.set('book', true);
     },
     takeSunglasses() {
       var sunglasses = {name: "Sunglasses", image: ""};
       this.get('inventory').add(sunglasses);
+      this.set('sunglasses', true);
     },
     talkToSteve() {
       this.set('talkToSteve', true);

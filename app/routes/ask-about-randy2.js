@@ -11,6 +11,7 @@ export default Ember.Route.extend({
     askForWallet() {
       var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
       this.get('inventory').add(dirtyDrugs);
+      this.set('dirtyDrugs', true);
       this.set('askForWallet', true);
       this.transitionTo('ask-for-wallet');
     },

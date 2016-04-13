@@ -11,6 +11,7 @@ export default Ember.Route.extend({
     askForDrugs() {
       var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
       this.get('inventory').add(dirtyDrugs);
+      this.set('dirtyDrugs', true);
       this.set('askForDrugs', true);
       this.transitionTo('ask-for-drugs');
     },
