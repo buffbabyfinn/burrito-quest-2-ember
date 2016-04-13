@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   startScreen: false,
-  kegstandOne: false,
+  talkToSteve: false,
 
   actions: {
     startGame() {
@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     },
     talkToSteve() {
       this.set('startScreen', false);
-      this.set('kegstandOne', true);
+      this.set('talkToSteve', true);
     }
 
   }

@@ -148,7 +148,7 @@ You follow Randy into the room. It's a small examination room with only random a
 
 IF GO INTO ROOM WITH SLINGSHOT AND DRUGS
 
-You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. You load a drug into the slingshot chamber and retort "And now I get to watch YOU die!" As Randy screams "AHHHH!" with his mouth wide open, you draw the slingshot back and expertly fire the drug right down Randy's throat (picture the photon torpedo entering the Death Star at the end of A New Hope). A direct hit! Randy chokes briefly, and crumples to the floor as the drug takes effect.  
+You follow Randy into the room. It's a small examination room with only random and assorted medical supplies inside. You close the door behind you, and Randy hears the latch. He turns towards you, and screams "I THOUGHT YOU WERE DEAD! I WATCHED YOU DIE." You're blocking the door, he has nowhere to run this time. You load a drug into the slingshot chamber and retort "And now I get to watch YOU die!" As Randy screams "AHHHH!" with his mouth wide open, you draw the slingshot back and expertly fire the drug right down Randy's throat (picture the photon torpedo entering the Death Star at the end of A New Hope). A direct hit! Randy chokes briefly, and crumples to the floor as the drug takes effect.
 
 IF MAGIC EYE AND INCAPACITATED RANDY
 

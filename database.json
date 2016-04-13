@@ -1,0 +1,7 @@
+{ "game": [{
+  "startScreen": false,
+  "talkToSteve": false,
+  "askForDrugs": false
+  }]
+
+}

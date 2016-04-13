@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('hospital');
   this.route('house');
   this.route('kegstand');
+  this.route('talk-to-steve');
+  this.route('ask-for-drugs');
+  this.route('take-drugs-death');
+  this.route('ask-about-randy2');
+  this.route('ask-for-wallet');
 });
 
 export default Router;
