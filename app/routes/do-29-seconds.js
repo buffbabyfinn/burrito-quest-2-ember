@@ -11,6 +11,7 @@ export default Ember.Route.extend({
     takeMagicEye() {
       var book = {name: "Magic Eye Book", image: ""};
       this.get('inventory').add(book);
+
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('takeMagicEye', true);
         anything.save();

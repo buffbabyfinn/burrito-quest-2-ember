@@ -10,8 +10,8 @@ export default Ember.Route.extend({
     questionWrong() {
       this.transitionTo('question-wrong');
     },
-    questionOneRight() {
-      this.transitionTo('question-one-right');
+    questionThreeRight() {
+      this.transitionTo('question-three-right');
     }
   }
 });

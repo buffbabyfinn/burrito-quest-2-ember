@@ -1,20 +1,54 @@
+$black: #010000;
+$orange: #EB8634;
+$teal: #00565F;
+$skyblue: #409995;
+$green: #48B000;
+
 .inventory-image {
   max-width: 150px;
 }
 
 body {
+  background-color: $skyblue;
+
   h1, h2, h3, h4, h5 {
     font-family: 'Press Start 2P', cursive;
+    color: $orange !important;
   }
 
   p {
     font-family: 'Ubuntu Mono', ;
-    font-size: 1.4em;
+    font-size: 1.6em;
+    color: white;
   }
 
   .hidden-drugs, .hidden-wallet, .hidden-trophy, .hidden-sunglasses, .hidden-book, .hidden-slingshot {
     display: none;
   }
+  .jumbotron {
+    background-color: $teal;
+  }
+  .inventorytitle {
+    color: $orange !important;
+    margin-top: 0px;
+    text-shadow:
+         3px 3px 0 $teal,
+       -1px -1px 0 $teal,
+        1px -1px 0 $teal,
+        -1px 1px 0 $teal,
+         1px 1px 0 $teal;
+    text-align: center;
+  }
+  .inventoryitem {
+    color: #F7E26B !important;
+  }
+
+}
+
+.inventory {
+  padding: 15px;
+  border: 4px $teal solid;
+  border-radius: 5px;
 }
 
 .game-btn {
@@ -23,13 +57,34 @@ body {
   font-size: 1.6em;
   border-radius: 5px;
   margin: 5px 0px;
-  color: #333;
-  background-color: white;
-  border: 2px #333 solid;
-
+  padding: 3px 8px;
+  color: $orange;
+  background-color: $teal;
+  border: 0px;
 }
 
 .game-btn:hover {
-  color: white;
-  background-color: #333;
+  color: $teal;
+  background-color: $orange;
+}
+
+.game-over {
+  text-align: center;
+  font-size: 3em;
+  text-shadow:
+       3px 3px 0 $teal,
+     -1px -1px 0 $teal,
+      1px -1px 0 $teal,
+      -1px 1px 0 $teal,
+       1px 1px 0 $teal;
+}
+
+.start-btn {
+  padding: 15px;
+  font-size: 4em !important;
+  font-family: 'Press Start 2P', cursive;
+}
+footer {
+  width: 100%;
+  clear: both;
 }

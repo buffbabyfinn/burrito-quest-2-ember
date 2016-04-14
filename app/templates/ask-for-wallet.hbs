@@ -1,15 +1,21 @@
-<p>You demand Steve's wallet. He responds "You know what, Wanda? You're so terrifying to me that I will 100% give you my wallet if it means staying on your good side. Just let me grab my bus pass out of it real quick." Steve takes his bus pass out of the wallet and hands it to you. Wow, that was easy. Oh sweet! There's $22 in here.</p>
-<br>
-{{#each model as |game|}}
-{{#unless game.askForDrugs}}
-<button {{action 'askForDrugs'}}>Ask Steve about drugs</button><br>
-{{/unless}}
-{{/each}}
-<button {{action 'askAboutRandy2'}}>Ask Steve about Randy.</button><br>
-{{#each model as |game|}}
-{{#unless game.doKegstand}}
-<button {{action 'doKegstand'}}>Go do a keg stand</button><br>
-{{/unless}}
-{{/each}}
 
-{{inventory-display}}
+<div class="col-sm-8">
+  
+  <p>You demand Steve's wallet. He responds "You know what, Wanda? You're so terrifying to me that I will 100% give you my wallet if it means staying on your good side. Just let me grab my bus pass out of it real quick." Steve takes his bus pass out of the wallet and hands it to you. Wow, that was easy. Oh sweet! There's $22 in here.</p>
+  <br>
+  {{#each model as |game|}}
+  {{#unless game.askForDrugs}}
+  <button {{action 'askForDrugs'}}>Ask Steve about drugs</button><br>
+  {{/unless}}
+  {{/each}}
+  <button {{action 'askAboutRandy2'}}>Ask Steve about Randy.</button><br>
+  {{#each model as |game|}}
+  {{#unless game.doKegstand}}
+  <button {{action 'doKegstand'}}>Go do a keg stand</button><br>
+  {{/unless}}
+  {{/each}}
+
+</div>
+<div class="col-sm-4">
+  {{inventory-display}}
+</div>

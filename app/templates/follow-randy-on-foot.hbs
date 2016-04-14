@@ -1,16 +1,20 @@
-<p>You follow Randy on foot, being sure to hang back so he doesn't notice that it's you half a block back. He approaches the hospital on foot, and enters a wing. The sign above the entrance reads "CHILDREN'S CANCER WARD." Hanging around outside of the entrance is a kid with cancer holding a slingshot and a cop with a shiny pistol. WHAT DO?</p>
-<br>
-{{#each model as |game|}}
-{{#if game.askForWallet}}
-<button class="game-btn" {{action 'bribeKid'}}>Bribe the kid for his slingshot</button><br>
-{{/if}}
-{{/each}}
-<button class="game-btn" {{action 'stealCopsGun'}}>Bribe the cop for his shiny gun</button><br>
-{{#each model as |game|}}
-{{#if game.takeSunglasses}}
-<button class="game-btn" {{action 'enterHospital'}}>Enter Hospital</button><br>
-{{else}}
-<button class="game-btn" {{action 'enterHospitalDeath'}}>Enter Hospital</button><br>
-{{/if}}
-{{/each}}
-{{inventory-display}}
+<div class="col-sm-8">
+  <p>You follow Randy on foot, being sure to hang back so he doesn't notice that it's you half a block back. He approaches the hospital on foot, and enters a wing. The sign above the entrance reads "CHILDREN'S CANCER WARD." Hanging around outside of the entrance is a kid with cancer holding a slingshot and a cop with a shiny pistol. WHAT DO?</p>
+  <br>
+  {{#each model as |game|}}
+  {{#if game.askForWallet}}
+  <button class="game-btn" {{action 'bribeKid'}}>Bribe the kid for his slingshot</button><br>
+  {{/if}}
+  {{/each}}
+  <button class="game-btn" {{action 'stealCopsGun'}}>Bribe the cop for his shiny gun</button><br>
+  {{#each model as |game|}}
+  {{#if game.takeSunglasses}}
+  <button class="game-btn" {{action 'enterHospital'}}>Enter Hospital</button><br>
+  {{else}}
+  <button class="game-btn" {{action 'enterHospitalDeath'}}>Enter Hospital</button><br>
+  {{/if}}
+  {{/each}}
+</div>
+<div class="col-sm-4">
+  {{inventory-display}}
+</div>
