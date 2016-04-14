@@ -36,6 +36,10 @@ export default Ember.Route.extend({
         anything.set('bribeKid', false);
         anything.save();
       });
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('do29Seconds', false);
+        anything.save();
+      });
 
       this.transitionTo('party');
     }
