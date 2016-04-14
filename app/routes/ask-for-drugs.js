@@ -19,7 +19,10 @@ export default Ember.Route.extend({
     askForWallet() {
       var stevesWallet = {name: "Steve the Ambulance Driver's Wallet", image: ""};
       this.get('inventory').add(stevesWallet);
-      this.set('askForWallet', true);
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('askForWallet', true);
+        anything.save();
+      });
       this.transitionTo('ask-for-wallet');
     }
 
