@@ -62,8 +62,8 @@ body {
   }
 
   .inventory-image {
-    height: 80px;
-    max-width: 150px;
+    max-height: 80px;
+    max-width: 100px;
     float: left;
     margin-right: 10px;
   }
@@ -75,7 +75,6 @@ body {
 }
 
 .title-image {
-  background-image: url('/assets/images/title-image.png');
 }
 
 .site {
