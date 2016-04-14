@@ -1,15 +1,27 @@
 <div class="col-sm-8">
-  <p>You shuffle your way over to Steve, the ambulance driver. He sees you approaching, and visibly tightens up a bit. "H-h-hey Wanda. What do you want?"</p>
-  <br>
-
-  <button class="game-btn" type="button" name="button" {{action 'askForWallet'}}>Ask for Steve's Wallet (just to borrow)</button><br>
-  <button class="game-btn" type="button" name="button" {{action 'askForDrugs'}}>Ask if Steve has drugs.</button><br>
-  <button class="game-btn" type="button" name="button"{{action 'askAboutRandy2'}}>Ask About Randy</button>
-  <br>
-  <button class="game-btn" type="button" name="button"{{action 'doAKegStand'}}>Do a keg stand</button>
-  <br>
+<p>You shuffle your way over to Steve, the ambulance driver. He sees you approaching, and visibly tightens up a bit. "H-h-hey Wanda. What do you want?"</p>
+<br>
+{{#each model as |game|}}
+{{#unless game.askForWallet }}
+<button type="button" name="button" {{action 'askForWallet'}}>Ask for Steve's Wallet (just to borrow)</button><br>
+{{/unless}}
+{{/each}}
+{{#each model as |game|}}
+{{#unless game.askForDrugs }}
+<button type="button" name="button" {{action 'askForDrugs'}}>Ask if he has drugs. Steve the ambulance driver always has drugs.</button><br>
+{{/unless}}
+{{/each}}
+<button type="button" name="button"{{action 'askAboutRandy2'}}>Ask About Randy</button>
+<br>
+{{#each model as |game|}}
+{{#unless game.doKegstand }}
+<button type="button" name="button"{{action 'doKegstand'}}>Do a keg stand</button>
+<br>
+{{/unless}}
+{{/each}}
 
 </div>
+
 <div class="col-sm-4">
   {{inventory-display}}
 </div>

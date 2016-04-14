@@ -14,8 +14,10 @@ export default Ember.Route.extend({
     bribeKid() {
       var slingshot = {name: "Slingshot", image:""};
       this.get('inventory').add(slingshot);
-      this.set('slingshot', true);
-      this.set('bribeKid', true);
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('bribeKid', true);
+        anything.save();
+      });
       this.transitionTo('bribe-kid');
     },
     stealCopsGun() {

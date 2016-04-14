@@ -1,7 +1,13 @@
-{ "game": [{
+{ "games": [{
   "startScreen": false,
   "talkToSteve": false,
-  "askForDrugs": false
+  "askForDrugs": false,
+  "doKegstand" : false,
+  "takeSunglasses": false,
+  "takeMagicEye": false,
+  "askForWallet": false,
+  "bribeKid": false,
+  "do29Seconds": false
   }],
   "items":
   [{

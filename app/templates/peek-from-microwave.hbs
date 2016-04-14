@@ -1,7 +1,11 @@
 <div class="col-sm-8">
   <p>You eavesdrop on the backyard group's conversation. One of Randy's friends announces "Hey, bros! I'm about to mix up some sick cocktails! Get ready to be radded out!" Randy's cocktail-making buddy heads into the kitchen where you are awkwardly next to the microwave. Randy's buddy ignores your presence and starts with the sick bro cocktails. An idea dawns on you, but you're going to need a distraction... WHAT DO?</p>
   <br>
+  {{#each model as |game|}}
+  {{#if game.takeMagicEye}}
   <button class="game-btn" {{action 'showFriendMagicEye'}}>Distract Randy's friend with the Magic Eye book</button><br>
+  {{/if}}
+  {{/each}}
   <button class="game-btn" {{action 'mimicBroVoice'}}>Mimic a bro voice and yell "FREE BURRITOS OUT FRONT, BROS!"</button><br>
   <button class="game-btn" {{action 'askAboutRandy3'}}>Ask Randy's friend about Randy</button><br>
 </div>

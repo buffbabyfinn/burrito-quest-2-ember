@@ -2,8 +2,16 @@
   <p>You are propped upside-down over the keg by the protagonist from the first Burrito Quest. A crowd forms around you and starts counting up from 1 as the keg nozzle is shoved into your mouth and a mystery hand triggers open the faucet. The beer flows into your mouth and you hear the crowd chant "...26!...27!...28!" Right on 28, the protagonist lets you down and the crowd cheers. You hear a random partygoer exclaim "Wow, you were only one second shy of the house record!" The protagonist approaches the keg to do a kegstand himself. As he's flipped over the keg, you notice a Magic Eye book and set of sunglasses dangling from his pockets. WHAT DO? </p>
   <br>
   <button class="game-btn" {{action 'talkToSteve'}}>Talk to Steve</button><br>
+  {{#each model as |game|}}
+  {{#unless game.takeMagicEye}}
   <button class="game-btn" {{action 'takeMagicEye'}}>Steal Magic Eye book</button><br>
+  {{/unless}}
+  {{/each}}
+  {{#each model as |game|}}
+  {{#unless game.takeSunglasses}}
   <button class="game-btn" {{action 'takeSunglasses'}}>Steal sunglasses</button><br>
+  {{/unless}}
+  {{/each}}
   <button class="game-btn" {{action 'askAboutRandy1'}}>Ask protagonist about Randy</button><br>
 
 </div>

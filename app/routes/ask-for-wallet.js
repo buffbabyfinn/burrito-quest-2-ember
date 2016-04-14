@@ -11,8 +11,10 @@ export default Ember.Route.extend({
     askForDrugs() {
       var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
       this.get('inventory').add(dirtyDrugs);
-      this.set('dirtyDrugs', true);
-      this.set('askForDrugs', true);
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('askForDrugs', true);
+        anything.save();
+      });
       this.transitionTo('ask-for-drugs');
     },
     askAboutRandy2() {
@@ -20,8 +22,11 @@ export default Ember.Route.extend({
       this.transitionTo('ask-about-randy2');
     },
 
-    doAKegStand() {
-      this.set('doKegstand', true);
+    doKegstand() {
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('doKegstand', true);
+        anything.save();
+      });
       this.transitionTo('kegstand');
 
     }
