@@ -1,11 +1,11 @@
 <div class="col-sm-8">
   <p>"Why sure I have drugs. After all, I'm Steve the ambulance driver! Oh shoot, I think all I got left is this mystery variety sack I got of the street for $12. I'm nervous to use them, but if it'll get you to leave me alone, they're all yours!" He hands you the sack. <strong>DRUGS ACQUIRED</strong></p>
   <br>
-<button {{action 'takeDrugsDeath'}}>Take Steve's drugs on the spot.</button><br>
-<button {{action 'askAboutRandy2'}}>Ask Steve about Randy.</button><br>
+<button class="game-btn" {{action 'takeDrugsDeath'}}>Take Steve's drugs on the spot.</button><br>
+<button class="game-btn" {{action 'askAboutRandy2'}}>Ask Steve about Randy.</button><br>
 {{#each model as |game|}}
 {{#unless game.askForWallet}}
-<button {{action 'askForWallet'}}>Ask Steve for his wallet.</button><br>
+<button class="game-btn" {{action 'askForWallet'}}>Ask Steve for his wallet.</button><br>
 {{/unless}}
 {{/each}}
 <br>
