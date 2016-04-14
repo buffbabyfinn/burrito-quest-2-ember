@@ -50,6 +50,8 @@ Router.map(function() {
   this.route('wheelchair-run-for-it-trophy');
   this.route('question-wrong');
   this.route('question-one-right');
+  this.route('question-two-right');
+  this.route('question-three-right');
 });
 
 export default Router;
