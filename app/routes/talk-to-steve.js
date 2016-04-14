@@ -31,7 +31,7 @@ export default Ember.Route.extend({
 
       this.transitionTo('ask-about-randy2');
     },
-    doAKegStand() {
+    doKegstand() {
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('doKegstand', true);
         anything.save();

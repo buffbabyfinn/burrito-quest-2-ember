@@ -9,4 +9,5 @@ export default Model.extend({
   takeMagicEye: DS.attr(),
   askForWallet: DS.attr(),
   bribeKid: DS.attr(),
+  do29Seconds: DS.attr()
 });
