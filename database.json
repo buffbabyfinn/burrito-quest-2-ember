@@ -3,6 +3,8 @@
   "talkToSteve": false,
   "askForDrugs": false,
   "doKegstand" : false,
+  "takeSunglasses": false,
+  "takeMagicEye": false,
 
   }],
   "items":

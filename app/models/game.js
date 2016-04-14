@@ -5,4 +5,6 @@ export default Model.extend({
   talkToSteve: DS.attr(),
   doKegstand: DS.attr(),
   askForDrugs: DS.attr(),
+  takeSunglasses: DS.attr(),
+  takeMagicEye: DS.attr(),
 });

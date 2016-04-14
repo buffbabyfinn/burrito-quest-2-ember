@@ -14,6 +14,15 @@ export default Ember.Route.extend({
         anything.set('doKegstand', false);
         anything.save();
       });
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('takeSunglasses', false);
+        anything.save();
+      });
+
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('takeMagicEye', false);
+        anything.save();
+      });
 
       this.transitionTo('party');
     }
