@@ -6,9 +6,6 @@ export default Ember.Route.extend({
   },
   inventory: Ember.inject.service(),
   actions: {
-    putOnSunglasses() {
-
-    },
     stealCopsGun() {
       this.set('stealCopsGun', true);
       this.transitionTo('steal-cops-gun-death');

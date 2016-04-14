@@ -12,7 +12,7 @@ export default Ember.Route.extend({
       this.set('putOnSunglasses', true);
     },
     bribeKid() {
-      var slingshot = {name: "Slingshot", image:""};
+      var slingshot = {name: "Slingshot", image:"/assets/images/shingshot.png"};
       this.get('inventory').add(slingshot);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('bribeKid', true);

@@ -40,11 +40,11 @@ body {
   border-radius: 5px;
   overflow: hidden;
 
-  .inventoryitem {
+  .inventory-item {
     color: $teal !important;
   }
 
-  .inventorytitle {
+  .inventory-title {
     color: $orange !important;
     margin-top: 0px;
     text-shadow:
@@ -56,9 +56,26 @@ body {
     text-align: center;
   }
 
-  .inventory-image {
-    max-width: 150px;
+  .inventory-tile {
+    clear: both;
+    text-align: center;
   }
+
+  .inventory-image {
+    height: 80px;
+    max-width: 150px;
+    float: left;
+    margin-right: 10px;
+  }
+
+  h4 .inventory-item {
+    margin-top: 30px;
+    float: right;
+  }
+}
+
+.title-image {
+  background-image: url('/assets/images/title-image.png');
 }
 
 .site {

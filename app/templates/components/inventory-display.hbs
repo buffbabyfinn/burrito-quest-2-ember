@@ -1,8 +1,10 @@
 <div class="inventory">
-  <h2 class="inventorytitle">Inventory</h2>
-  {{#each inventory.items as |item|}}
-  <img class="inventory-image" src="{{item.image}}"/>
-  <h4 class="inventoryitem">{{item.name}}</h4>
-  <br>
-  {{/each}}
+  <h2 class="inventory-title">Inventory</h2>
+    {{#each inventory.items as |item|}}
+      <div class="inventory-tile">
+        <img class="inventory-image" src="{{item.image}}"/>
+        <h4 class="inventory-item">{{item.name}}</h4>
+        <br>
+      </div>
+    {{/each}}
 </div>

@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       this.transitionTo('do-28-seconds');
     },
     do29Seconds() {
-      var trophy = {name: "Kegstand Trophy", image: ""};
+      var trophy = {name: "Kegstand Trophy", image: "/assets/images/trophy.png"};
       this.get('inventory').add(trophy);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('do29Seconds', true);

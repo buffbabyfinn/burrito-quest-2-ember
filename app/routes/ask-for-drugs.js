@@ -16,7 +16,7 @@ export default Ember.Route.extend({
       this.transitionTo('ask-about-randy2');
     },
     askForWallet() {
-      var stevesWallet = {name: "Steve the Ambulance Driver's Wallet", image: ""};
+      var stevesWallet = {name: "Steve the Ambulance Driver's Wallet", image: "/assets/images/wallet.png"};
       this.get('inventory').add(stevesWallet);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('askForWallet', true);

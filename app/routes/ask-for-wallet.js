@@ -9,7 +9,7 @@ export default Ember.Route.extend({
 
   actions: {
     askForDrugs() {
-      var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
+      var dirtyDrugs = {name: "Dirty Bag of Drugs", image: "/assets/images/drugs.png"};
       this.get('inventory').add(dirtyDrugs);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('askForDrugs', true);
