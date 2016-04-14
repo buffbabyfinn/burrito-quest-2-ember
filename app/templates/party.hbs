@@ -1,10 +1,10 @@
 <div class="col-sm-8">
   <p>You are Wanda from the first Burrito Quest. Randy has wronged you. You heard that Randy is at a party thrown by Steve the ambulance driver. You have just arrived at the party. WHAT DO?</p>
   <br>
-<button {{action 'talkToSteve'}}>Talk to Steve</button><br>
+<button class="game-btn" {{action 'talkToSteve'}}>Talk to Steve</button><br>
 {{#each model as |game|}}
 {{#unless game.doKegstand }}
-<button {{action 'doKegstand'}}>Do a kegstand!</button>
+<button class="game-btn" {{action 'doKegstand'}}>Do a kegstand!</button>
 {{/unless}}
 {{/each}}
 <br>

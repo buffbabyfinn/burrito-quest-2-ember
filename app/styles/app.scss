@@ -4,10 +4,6 @@ $teal: #00565F;
 $skyblue: #409995;
 $green: #48B000;
 
-.inventory-image {
-  max-width: 150px;
-}
-
 body {
   background-color: $skyblue;
 
@@ -16,10 +12,18 @@ body {
     color: $orange !important;
   }
 
+  h1::selection, h2::selection, h3::selection, h4::selection, h5::selection {
+    color: $orange;
+  }
+
   p {
     font-family: 'Ubuntu Mono', ;
     font-size: 1.6em;
     color: white;
+  }
+
+  p::selection {
+    background-color: $teal;
   }
 
   .hidden-drugs, .hidden-wallet, .hidden-trophy, .hidden-sunglasses, .hidden-book, .hidden-slingshot {
@@ -28,6 +32,18 @@ body {
   .jumbotron {
     background-color: $teal;
   }
+}
+
+.inventory {
+  padding: 15px;
+  border: 4px $teal solid;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .inventoryitem {
+    color: $teal !important;
+  }
+
   .inventorytitle {
     color: $orange !important;
     margin-top: 0px;
@@ -39,16 +55,20 @@ body {
          1px 1px 0 $teal;
     text-align: center;
   }
-  .inventoryitem {
-    color: #F7E26B !important;
-  }
 
+  .inventory-image {
+    max-width: 150px;
+  }
 }
 
-.inventory {
-  padding: 15px;
-  border: 4px $teal solid;
-  border-radius: 5px;
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
 }
 
 .game-btn {
@@ -68,16 +88,7 @@ body {
   background-color: $orange;
 }
 
-.game-over {
-  text-align: center;
-  font-size: 3em;
-  text-shadow:
-       3px 3px 0 $teal,
-     -1px -1px 0 $teal,
-      1px -1px 0 $teal,
-      -1px 1px 0 $teal,
-       1px 1px 0 $teal;
-}
+
 
 .start-btn {
   padding: 15px;
@@ -87,4 +98,15 @@ body {
 footer {
   width: 100%;
   clear: both;
+}
+
+.game-over {
+  text-align: center;
+  font-size: 3em;
+  text-shadow:
+       3px 3px 0 $teal,
+     -1px -1px 0 $teal,
+      1px -1px 0 $teal,
+      -1px 1px 0 $teal,
+       1px 1px 0 $teal;
 }
