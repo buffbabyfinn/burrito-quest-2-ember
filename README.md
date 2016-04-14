@@ -1,7 +1,12 @@
-# Burrito-quest2
+# _Burrito Quest II: Rise of Wanda_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Final Javascript Project at Epicodus, 4.14.2016_
+
+### By _**Mollie Bootsma, Megan Fayer, Kyle Derrick and Jon Nardini**_
+
+## Description
+
+_This web app is a text-based game! It's a prequel to the PHP group project from last term (https://github.com/marywarrington/burrito-adventure.git). The adventure begins with a user-controlled Wanda arriving at a party, looking for Randy. The user can then navigate through the game, collected necessary items and passing obstacles on their way to getting their burrito back from Randy (winning) or not (losing)._
 
 ## Prerequisites
 
@@ -50,4 +55,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
