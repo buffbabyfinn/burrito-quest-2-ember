@@ -2,6 +2,10 @@
 <br>
 
 <button {{action 'talkToSteve'}}>Talk to Steve</button><br>
+{{#each model as |game|}}
+{{#unless game.doKegstand }}
 <button {{action 'doKegstand'}}>Do a kegstand!</button>
+{{/unless}}
+{{/each}}
 <br>
 {{inventory-display}}

@@ -1,7 +1,9 @@
 { "game": [{
   "startScreen": false,
   "talkToSteve": false,
-  "askForDrugs": false
+  "askForDrugs": false,
+  "doKegstand" : false,
+
   }],
   "items":
   [{

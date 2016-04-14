@@ -28,6 +28,10 @@ export default Ember.Route.extend({
       this.transitionTo('ask-about-randy2');
     },
     doAKegStand() {
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('doKegstand', true);
+        anything.save();
+      });
       this.transitionTo('kegstand')
     }
   }
