@@ -1,6 +1,8 @@
-<h2>Inventory</h2>
-{{#each inventory.items as |item|}}
-<img class="inventory-image" src="{{item.image}}"/>
-<h4 class="inventory-name">{{item.name}}</h4>
-<br>
-{{/each}}
+<div class="inventory">
+  <h2 class="inventorytitle">Inventory</h2>
+  {{#each inventory.items as |item|}}
+  <img class="inventory-image" src="{{item.image}}"/>
+  <h4 class="inventoryitem">{{item.name}}</h4>
+  <br>
+  {{/each}}
+</div>

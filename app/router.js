@@ -48,6 +48,8 @@ Router.map(function() {
   this.route('gurney-distract-trophy');
   this.route('wheelchair-distract-trophy');
   this.route('wheelchair-run-for-it-trophy');
+  this.route('question-wrong');
+  this.route('question-one-right');
 });
 
 export default Router;

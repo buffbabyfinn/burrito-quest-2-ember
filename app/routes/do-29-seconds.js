@@ -15,7 +15,6 @@ export default Ember.Route.extend({
       var book = {name: "Magic Eye Book", image: ""};
       this.get('inventory').add(book);
       this.set('test', true);
-      debugger;
     },
     takeSunglasses() {
       var sunglasses = {name: "Sunglasses", image: ""};
