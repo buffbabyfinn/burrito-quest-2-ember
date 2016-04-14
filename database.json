@@ -5,6 +5,7 @@
   "doKegstand" : false,
   "takeSunglasses": false,
   "takeMagicEye": false,
+  "askForWallet": false,
 
   }],
   "items":

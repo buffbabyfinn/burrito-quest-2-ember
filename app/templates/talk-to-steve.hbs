@@ -1,8 +1,15 @@
 You shuffle your way over to Steve, the ambulance driver. He sees you approaching, and visibly tightens up a bit. "H-h-hey Wanda. What do you want?"
 <br>
-
+{{#each model as |game|}}
+{{#unless game.askForWallet }}
 <button type="button" name="button" {{action 'askForWallet'}}>Ask for Steve's Wallet (just to borrow)</button><br>
+{{/unless}}
+{{/each}}
+{{#each model as |game|}}
+{{#unless game.askForDrugs }}
 <button type="button" name="button" {{action 'askForDrugs'}}>Ask if he has drugs. Steve the ambulance driver always has drugs.</button><br>
+{{/unless}}
+{{/each}}
 <button type="button" name="button"{{action 'askAboutRandy2'}}>Ask About Randy</button>
 <br>
 {{#each model as |game|}}

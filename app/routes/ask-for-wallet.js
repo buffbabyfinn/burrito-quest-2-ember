@@ -20,7 +20,7 @@ export default Ember.Route.extend({
       this.transitionTo('ask-about-randy2');
     },
 
-    doAKegStand() {
+    doKegstand() {
       this.set('doKegstand', true);
       this.transitionTo('kegstand');
 

@@ -7,4 +7,5 @@ export default Model.extend({
   askForDrugs: DS.attr(),
   takeSunglasses: DS.attr(),
   takeMagicEye: DS.attr(),
+  askForWallet: DS.attr(),
 });

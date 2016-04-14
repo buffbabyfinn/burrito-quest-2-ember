@@ -4,7 +4,11 @@
 
 <button {{action 'takeDrugsDeath'}}>Take Steve's drugs on the spot.</button><br>
 <button {{action 'askAboutRandy2'}}>Ask Steve about Randy.</button><br>
+{{#each model as |game|}}
+{{#unless game.askForWallet}}
 <button {{action 'askForWallet'}}>Ask Steve for his wallet.</button><br>
+{{/unless}}
+{{/each}}
 <br>
 
 {{inventory-display}}
