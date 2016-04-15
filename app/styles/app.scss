@@ -115,7 +115,8 @@ body {
   padding: 15px;
   font-size: 5em !important;
   font-family: 'Press Start 2P', cursive;
-  position: relative;
+  position: absolute;
+  z-index: 10;
 }
 footer {
   width: 100%;
