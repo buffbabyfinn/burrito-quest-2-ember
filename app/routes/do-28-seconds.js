@@ -9,7 +9,7 @@ export default Ember.Route.extend({
 
   actions: {
     takeMagicEye() {
-      var book = {name: "Magic Eye Book", image: ""};
+      var book = {name: "Magic Eye Book", image: "/assets/images/book.png"};
       this.get('inventory').add(book);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('takeMagicEye', true);
@@ -17,7 +17,7 @@ export default Ember.Route.extend({
       });
     },
     takeSunglasses() {
-      var sunglasses = {name: "Sunglasses", image: ""};
+      var sunglasses = {name: "Sunglasses", image: "/assets/images/sunglasses.png"};
       this.get('inventory').add(sunglasses);
       this.store.findRecord('game', 0).then(function(anything) {
         anything.set('takeSunglasses', true);

@@ -5,7 +5,7 @@
   {{#each model as |game|}}
   {{#if game.bribeKid}}
   {{#unless game.askForDrugs}}
-  <button class="game-btn" {{action 'followRandyIntoRoomSlingshot'}}>Follow Randy into room (slingshot, no drugs)</button><br>
+  <button class="game-btn" {{action 'followRandyIntoRoomSlingshot'}}>Follow Randy into room</button><br>
   {{/unless}}
   {{/if}}
   {{/each}}
@@ -13,25 +13,25 @@
   {{#each model as |game|}}
   {{#if game.bribeKid}}
   {{#if game.askForDrugs}}
-  <button class="game-btn" {{action 'followRandyIntoRoomDrugsSlingshot'}}>Follow Randy into room (with drugs and slingshot, trophy optional)</button><br>
+  <button class="game-btn" {{action 'followRandyIntoRoomDrugsSlingshot'}}>Follow Randy into room</button><br>
   {{/if}}
   {{/if}}
   {{/each}}
 
   {{#each model as |game|}}
   {{#if game.do29Seconds}}
-  {{#unless game.askForDrugs}}
+  {{#if game.askForDrugs}}
   {{#unless game.bribeKid}}
-  <button class="game-btn" {{action 'followRandyIntoRoomTrophy'}}>Follow Randy into room (with trophy)</button><br>
+  <button class="game-btn" {{action 'followRandyIntoRoomTrophy'}}>Follow Randy into room</button><br>
   {{/unless}}
-  {{/unless}}
+  {{/if}}
   {{/if}}
   {{/each}}
 
   {{#each model as |game|}}
   {{#unless game.bribeKid}}
   {{#unless game.do29Seconds}}
-  <button class="game-btn" {{action 'followRandyIntoRoomNoItems'}}>Follow Randy into room (with no items)</button><br>
+  <button class="game-btn" {{action 'followRandyIntoRoomNoItems'}}>Follow Randy into room</button><br>
   {{/unless}}
   {{/unless}}
   {{/each}}

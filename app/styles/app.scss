@@ -104,12 +104,18 @@ body {
   background-color: $orange;
 }
 
-
+#title-image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+}
 
 .start-btn {
   padding: 15px;
-  font-size: 4em !important;
+  font-size: 5em !important;
   font-family: 'Press Start 2P', cursive;
+  position: relative;
 }
 footer {
   width: 100%;
@@ -125,4 +131,8 @@ footer {
       1px -1px 0 $teal,
       -1px 1px 0 $teal,
        1px 1px 0 $teal;
+}
+
+.play-again {
+  margin: auto;
 }
