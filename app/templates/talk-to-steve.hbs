@@ -8,7 +8,7 @@
 {{/each}}
 {{#each model as |game|}}
 {{#unless game.askForDrugs }}
-<button class="game-btn" {{action 'askForDrugs'}}>Ask if he has drugs. Steve the ambulance driver always has drugs.</button><br>
+<button class="game-btn" {{action 'askForDrugs'}}>Ask Steve if he has drugs.</button><br>
 {{/unless}}
 {{/each}}
 <button class="game-btn" {{action 'askAboutRandy2'}}>Ask About Randy</button>
