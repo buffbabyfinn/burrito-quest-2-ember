@@ -9,10 +9,12 @@ export default Ember.Route.extend({
 
   actions: {
     askForWallet() {
-      var dirtyDrugs = {name: "Dirty Bag of Drugs", image: ""};
-      this.get('inventory').add(dirtyDrugs);
-      this.set('dirtyDrugs', true);
-      this.set('askForWallet', true);
+      var stevesWallet = {name: "Steve the Ambulance Driver's Wallet", image: "/assets/images/wallet.png"};
+      this.get('inventory').add(stevesWallet);
+      this.store.findRecord('game', 0).then(function(anything) {
+        anything.set('askForWallet', true);
+        anything.save();
+      });
       this.transitionTo('ask-for-wallet');
     },
     approachRandyBackyard() {

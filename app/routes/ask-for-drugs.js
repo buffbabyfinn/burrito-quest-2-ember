@@ -8,7 +8,6 @@ export default Ember.Route.extend({
 
   actions: {
     takeDrugsDeath() {
-      this.set('takeDrugsDeath', true);
       this.transitionTo('take-drugs-death');
     },
     askAboutRandy2() {

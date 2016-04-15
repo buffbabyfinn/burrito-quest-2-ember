@@ -20,11 +20,9 @@
 
   {{#each model as |game|}}
   {{#if game.do29Seconds}}
-  {{#if game.askForDrugs}}
   {{#unless game.bribeKid}}
   <button class="game-btn" {{action 'followRandyIntoRoomTrophy'}}>Follow Randy into room</button><br>
   {{/unless}}
-  {{/if}}
   {{/if}}
   {{/each}}
 
